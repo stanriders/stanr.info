@@ -1,0 +1,134 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Home of StanR.">
+	<meta name="theme-color" content="#000000">
+	<meta name="apple-mobile-web-app-title" content="StanR">
+	<meta name="application-name" content="StanR">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+	<link rel="shortcut icon" href="media/favicon.ico">
+	<link rel="manifest" href="media/manifest.json">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300">
+	<link rel="stylesheet" href="css/style.css?v=08102019">
+
+	<title>StanR - Home</title>
+</head>
+<body>
+	<!-- Main page -->
+	<div class="main">
+		<div class="logo">
+			<img src="media/logo_white.png">
+			<h2>Sometimes I do <a onclick="expand('code')" href="#">code</a>, <a onclick="expand('music')" href="#">music</a> and <a onclick="expand('games')" href="#">play games</a>.</h2>
+			<div class="icons">
+				<a href="https://vk.com/id41502528"><i class="fa fa-vk" aria-hidden="true"></i></a>
+				<a href="mailto:hi@stanr.info"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+	<!-- Hidden pages -->
+	<div class="pages">
+		<div class="logo-small">
+			<a onclick="reset()" href="#">< <img src="media/logo_white.png"></a>
+		</div>
+		<!-- Code section -->
+		<div class="page code">
+			<div class="projects-left">
+				<h2>Projects</h2>
+				<div class="project-type" onclick="projectTypeToggle('server')">Serverside</div>
+				<div class="project-expand server">
+					<li onclick="projectToggle('fc')">fights.club</li>
+					<li onclick="projectToggle('denobot')">den0bot</li>
+				</div>
+				<div class="project-type" onclick="projectTypeToggle('game')">Games</div>
+				<div class="project-expand game">
+					<li onclick="projectToggle('loststory')">Lost Story: The Last Days of Earth</li>
+					<li onclick="projectToggle('hl2asw')">HL2 -> ASW Port</li>
+					<li onclick="projectToggle('wmod')">Winter Mod</li>
+					<li onclick="projectToggle('wintex')">Winteric Textures</li>
+					<li onclick="projectToggle('katawa')">Katawa Shoujo Alpha Repair</li>
+				</div>
+				<div class="project-type" onclick="projectTypeToggle('web')">Web</div>
+				<div class="project-expand web">
+					<li onclick="projectToggle('kikoeru')">kikoe.ru</li>
+					<li onclick="projectToggle('stanr')">stanr.info</li>
+				</div>
+			</div>
+			<div class="projects-right">
+				<div class="project-info github">
+					<a href="https://github.com/stanriders" alt="GitHub page"><i class="fa fa-github" aria-hidden="true"></i></a>
+				</div>
+				<div class="project-info fc">
+					<a href="http://fights.club/" class="project-link">fights.club</a> C++, C#, Reverse Engineering<hr>
+					<div class="project-image-stack"><a href="media/fc.png"><img src="media/fc.png" class="project-image"/></a></div>
+					<p>Monetized Dota 2 games.<br>I made C++ module for reading and sending game statistics to remote server from dedicated game servers, made C# microservice for automanaging Steam lobby based games</p>
+				</div>
+				<div class="project-info denobot">
+					<a href="https://github.com/stanriders/den0bot" class="project-link">den0bot</a> C# .NET Core 3.0
+					<hr>
+					<p>Modular telegram bot with a lot of different functions mainly focused on osu!<br>Solo work.</p>
+				</div>
+				<div class="project-info loststory">
+					<a href="https://www.moddb.com/games/hl2loststory" class="project-link">Lost Story: The Last Days of Earth</a> C++, Source Engine<hr>
+					<div class="project-image-stack">
+						<a href="https://sun9-29.userapi.com/c854528/v854528940/107e75/zOrk30JEmA8.jpg"><img src="https://sun9-29.userapi.com/c854528/v854528940/107e75/zOrk30JEmA8.jpg" class="project-image"/></a>
+						<a href="https://sun9-18.userapi.com/c840430/v840430694/8efcb/RGmB_iTbgEM.jpg"><img src="https://sun9-18.userapi.com/c840430/v840430694/8efcb/RGmB_iTbgEM.jpg" class="project-image"/></a>
+						<a href="https://sun9-5.userapi.com/c858132/v858132940/7ce8d/h-OJ3htjN7U.jpg"><img src="https://sun9-5.userapi.com/c858132/v858132940/7ce8d/h-OJ3htjN7U.jpg" class="project-image"/></a>
+					</div>
+					<p>First person shooter set in the Half-Life universe, which allows you to witness the events between Half-Life and Half-Life 2.<br>I'm doing gameplay and UI programming</p>
+				</div>
+				<div class="project-info hl2asw">
+					<a href="https://github.com/stanriders/hl2-asw-port" class="project-link">HL2 -> ASW engine port</a> C++, Source Engine<hr>
+					<p>Port of Half-Life 2 game logic onto newer version of Source Engine taken from Alien Swarm SDK.<br>Solo work.</p>
+				</div>
+				<div class="project-info wmod">
+					<a href="http://www.moddb.com/mods/winter-mod" class="project-link">Winter Mod</a> C++, Source Engine<hr>
+					<div class="project-image-stack">
+						<a href="https://media.moddb.com/images/mods/1/14/13333/proto_winter_underbase20017.jpg"><img src="https://media.moddb.com/images/mods/1/14/13333/proto_winter_underbase20017.jpg" class="project-image"/></a>
+						<a href="https://media.moddb.com/images/mods/1/14/13333/140572992723.jpg"><img src="https://media.moddb.com/images/mods/1/14/13333/140572992723.jpg" class="project-image"/></a>
+						<a href="https://media.moddb.com/images/mods/1/14/13333/proto_winter_underbase20021.jpg"><img src="https://media.moddb.com/images/mods/1/14/13333/proto_winter_underbase20021.jpg" class="project-image"/></a>
+					</div>
+					<p>Unfinished Half-Life 2 modification.<br>Apart from managing the team I did level design and mapping, all of the programming and a bit of texture work.</p>
+				</div>
+				<div class="project-info wintex">
+					<a href="http://www.moddb.com/mods/winteric-textures" class="project-link">Winteric Textures</a> Source Engine<hr> 
+					<div class="project-image-stack"><a href="https://media.moddb.com/images/mods/1/25/24865/ep2_background030008.jpg"><img src="https://media.moddb.com/images/mods/1/25/24865/ep2_background030008.jpg" class="project-image"/></a></div>
+					<p>Retexturing Half-Life 2: Episode Two to make it look snowy.<br>Solo work.</p>
+				</div>
+				<div class="project-info katawa">
+					<a href="https://github.com/stanriders/ksalpha-repair" class="project-link">Katawa Shoujo Prealpha Repair</a> Python, Ren'Py<hr>
+					<p>Finishing leaked pre-alpha Katawa Shoujo visual novel scripts.<br>I did programming, directing and minor sprite work.</p>
+				</div>
+				<div class="project-info kikoeru">
+					<a href="http://kikoe.ru/" class="project-link">http://kikoe.ru/</a> HTML5, CSS3<hr>
+					<p>A joke website made for a local telegram chat.<br>I did <a href="http://kikoe.ru/players.html">players</a> page as well as hosting the website.</p>
+				</div>
+				<div class="project-info stanr">
+					<a href="http://stanr.info/" class="project-link">http://stanr.info/</a> HTML5, CSS3<hr>
+					<p>This exact website! I did a lot of experimenting with screen size depending font sizes to make site usable at all resolutions without using different layouts. It's also self-hosted</p>
+				</div>
+			</div>
+		</div>
+		<!-- Music section -->
+		<div class="page music">
+			<iframe width="100%" height="80%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/20147150&amp;color=%23c4c4c4&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+		</div>
+		<!-- Games section -->
+		<div class="page games">
+			<div class="icons-games">
+				<a href="http://steamcommunity.com/id/stan-riders"><i class="fa fa-steam" aria-hidden="true"></i></a>
+				<a href="http://osu.stanr.info/"><img class="fa" src="media/osu.png"></a>
+				<a href="https://www.twitch.tv/stanriders"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/expand.js"></script>
+</body>
+</html>
