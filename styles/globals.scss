@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200&display=swap');
+
+* {
+  /*overflow-x: hidden;*/
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+html {
+  font-size: 30px;
+  color: #eee;
+  background-color: #000;
+  padding: 10vh 10vw;
+  margin: 0;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+
+a:hover{
+  text-shadow: 0 0 10px #FFFFFFAA;
+}
+
+.main
+{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.backbutton {
+  font-size: 56px;
+  margin-bottom: 20px;
+  align-self: baseline;
+}
+
+.page {
+  flex-grow: 1;
+  width: 70%;
+}
+
+/* main page */
+@keyframes pulse {
+    0%{
+        opacity: 0.85;
+    }
+    50%{
+        opacity: 0.45;
+    }
+    100%{
+        opacity: 0.85;
+    }
+}
+
+.homepage {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  letter-spacing: 3px;
+  font-size: clamp(1.5rem, 3vw, 2.8vw);
+  margin: 2vh 0 1vh 0;
+  font-weight: normal;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+.pulse {
+    filter: brightness(0.35);
+    animation: pulse 5s ease infinite;
+}
+
+.pulse:hover {
+    filter: brightness(1.0);
+    animation: none;
+}
+
+/* music */
+.soundcloud {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+}
+
+/* projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  column-gap: 25px;
+}
+
+.projectSelector {
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.projectDraw {
+  flex-grow: 1;
+}
+
+.githubLink {
+  width: clamp(10vw, 15vw, 10vw);
+}
+
+.center {
+  text-align: center;
+}
+
+.projectHeader {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #eee;
+  border-bottom: 1px solid #222;
+  font-size: 0.8em;
+  font-family: inherit;
+  margin-top: 20px;
+}
+
+.projectHeader:hover {
+  background-color: #111;
+}
+
+.projectDescription{
+  margin: 25px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.projectTitle{
+  margin: 15px;
+  font-size: 12px;
+}
+
+.projectStack {
+  float: right;
+  font-weight: 700;
+}
+
+.projectType{
+  margin-top: 50px;
+}

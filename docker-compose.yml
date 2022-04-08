@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "127.0.0.1:3005:3000"
+    volumes:
+      - ./logs/frontend:/app/logs
+      - ./logs/frontend/npm:/root/.npm/_logs
