@@ -4,7 +4,7 @@ module.exports = [
     projects: [
       {
         name: 'Upteam',
-        link: 'https://the4people.com/',
+        link: 'https://upteam.com/',
         description: 'I was working with a med-tech USA-based client company on developing C# microservices based on logic of an Elixir monolith as well as expanding feature set of existing services. While doing that I was involved with helping on global and service-level architecture planning as well as developing the features themselves. The team was international and English-speaking.',
         stack: '.NET 5, PostgreSQL (EF Core), ASP.NET Core'
       },
@@ -83,6 +83,17 @@ module.exports = [
         link: 'https://github.com/stanriders/ksalpha-repair',
         description: 'Finishing leaked pre-alpha Katawa Shoujo visual novel scripts.',
         stack: 'Python, Ren\'Py'
+      }
+    ]
+  },
+  { 
+    type: "Contributing",
+    projects: [
+      {
+        name: 'osu!',
+        link: 'https://github.com/ppy/osu',
+        description: 'I\'ve contributed to the osu! both in the gameplay/tools as well as the scoring system (performance points) and currently one of the people in the group of developers dedicated to reviewing changes to it.',
+        stack: 'C#'
       }
     ]
   }
