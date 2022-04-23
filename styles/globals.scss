@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200&display=swap');
 
+@media only screen and (max-width: 767px) {
+  html {
+    padding: 1vh 1vw;
+  }
+  .page {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) { 
+  html {
+    padding: 5vh 5vw;
+  }
+  .page {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 993px) { 
+  html {
+    padding: 10vh 10vw;
+  }
+  .page {
+    width: 70%;
+  }
+}
+
 * {
   /*overflow-x: hidden;*/
   box-sizing: border-box;
@@ -10,7 +37,6 @@ html {
   font-size: 30px;
   color: #eee;
   background-color: #000;
-  padding: 10vh 10vw;
   margin: 0;
   font-family: 'Lato', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -43,7 +69,6 @@ a:hover{
 
 .page {
   flex-grow: 1;
-  width: 70%;
 }
 
 /* main page */
@@ -115,6 +140,7 @@ h2 {
 
 .githubLink {
   width: clamp(10vw, 15vw, 10vw);
+  min-width: 150px;
 }
 
 .center {
