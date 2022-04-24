@@ -1,7 +1,13 @@
 import {Collapse} from 'react-collapse';
 import React, {useState, useCallback} from 'react';
 
-export default function Project(data) {
+type ProjectProps = {
+    name: string,
+    link: string,
+    description: string
+  }
+
+const Project = (data : ProjectProps) => {
     const [state, callback] = useState(false);
         
     const onClick = useCallback(
@@ -24,3 +30,5 @@ export default function Project(data) {
       </>
     )
 }
+
+export default Project;

@@ -1,7 +1,8 @@
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import BackButton from '../components/backButton';
 
-export default function Music() {
+const Music: NextPage = () => {
     return (
       <>
         <Head>
@@ -14,3 +15,4 @@ export default function Music() {
       </>
     );
 }
+export default Music

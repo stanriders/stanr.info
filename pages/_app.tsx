@@ -2,8 +2,9 @@ import '../styles/globals.scss'
 import Head from 'next/head'
 import Router from "next/router";
 import withYM from "next-ym";
+import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>

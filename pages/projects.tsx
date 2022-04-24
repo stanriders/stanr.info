@@ -1,13 +1,13 @@
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import BackButton from '../components/backButton';
+import Project from '../components/project';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import consts from '../const';
-import React, {useState, useCallback} from 'react';
-import Project from '../components/project';
 
-export default function Projects() {
-    var layout = [];
+const Projects: NextPage = () => {
+    var layout = Array<JSX.Element>();
 
     consts.map((type) => {
         layout.push(<div className="projectType" key={type.type}>{type.type}</div>)
@@ -24,10 +24,11 @@ export default function Projects() {
         </Head>
         <BackButton />
         <div className="page projects">
-            <div className="center"><a href="https://github.com/stanriders" alt="GitHub page" className="githubLink"><FontAwesomeIcon icon={faGithub}  className="githubLink"/></a></div>
+            <div className="center"><a href="https://github.com/stanriders" title="GitHub page" className="githubLink"><FontAwesomeIcon icon={faGithub}  className="githubLink"/></a></div>
             <h2 className="center">Projects</h2>
             {layout}
         </div>
       </>
     );
 }
+export default Projects

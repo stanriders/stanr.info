@@ -1,7 +1,8 @@
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 
-export default function Error404() {
+const Error404: NextPage = () => {
   return (
     <>
       <Head>
@@ -15,3 +16,5 @@ export default function Error404() {
     </>
   )
 }
+
+export default Error404

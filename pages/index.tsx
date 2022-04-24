@@ -1,3 +1,4 @@
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -5,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faVk, faLinkedin, faSteam, faTwitch } from '@fortawesome/free-brands-svg-icons'
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
@@ -23,3 +24,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home
