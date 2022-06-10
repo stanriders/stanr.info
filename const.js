@@ -3,6 +3,12 @@ module.exports = [
     type: "Commercial",
     projects: [
       {
+        name: 'Blanc Bank',
+        link: 'https://blanc.ru/',
+        description: 'I am currently working in a B2B bank on the backend systems in the user registration and onboarding team.',
+        stack: '.NET Core 3.1, PostgreSQL (Dapper), ASP.NET Core'
+      },
+      {
         name: 'Upteam',
         link: 'https://upteam.com/',
         description: 'I was working with a med-tech USA-based client company on developing C# microservices based on logic of an Elixir monolith as well as expanding feature set of existing services. While doing that I was involved with helping on global and service-level architecture planning as well as developing the features themselves. The team was international and English-speaking.',
@@ -11,7 +17,7 @@ module.exports = [
       {
         name: 'Ak Bars Digital Technologies',
         link: 'https://akbars.digital/',
-        description: 'I was working in a Kazan state bank IT division on backend credit card issuing systems. Tasks included creating microservice integrationa with other banking systems as well as OpenWay credit card issuing system.',
+        description: 'I was working in a Kazan state bank IT division on backend credit card issuing systems. Tasks included creating microservice integrations with other banking systems as well as OpenWay credit card issuing system.',
         stack: 'ASP.NET Core, Docker, PostgreSQL'
       },
       {
@@ -33,7 +39,7 @@ module.exports = [
     projects: [
       {
         name: 'CircleForms',
-        link: 'https://circleforms.com',
+        link: 'https://circleforms.net/',
         description: 'Google Forms-alike website with osu! OAuth integration',
         stack: 'ASP.NET Core, Docker, PostgreSQL'
       },
