@@ -4,7 +4,8 @@ import React, {useState, useCallback} from 'react';
 type ProjectProps = {
     name: string,
     link: string,
-    description: string
+    description: string,
+    stack: string
   }
 
 const Project = (data : ProjectProps) => {
