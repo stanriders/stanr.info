@@ -38,6 +38,12 @@ module.exports = [
     type: "Personal",
     projects: [
       {
+        name: 'Mutualify',
+        link: 'https://mutualify.stanr.info/',
+        description: 'osu! friend list database and mutual finder',
+        stack: 'ASP.NET Core, Docker, PostgreSQL; Next.js, MUI'
+      },
+      {
         name: 'CircleForms',
         link: 'https://circleforms.net/',
         description: 'Google Forms-alike website with osu! OAuth integration',
