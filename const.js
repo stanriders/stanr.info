@@ -5,7 +5,7 @@ module.exports = [
       {
         name: 'Blanc Bank',
         link: 'https://blanc.ru/',
-        description: 'I am currently working in a B2B bank on the backend systems in the user registration and onboarding team.',
+        description: 'I am currently working in a B2B bank on the backend systems in the user registration and onboarding team. As one of the important for business tasks I developed a bonus system that rewarded clients for referral invites as well as many other things that brought a lot of new paying clients for the business. Other tasks included maintaining and expanding the Single Sign-On system, adding instagram-like stories system using Storily API, expanding registration system to allow existing clients to register additional companies and many others.',
         stack: '.NET Core 3.1, PostgreSQL (Dapper), ASP.NET Core'
       },
       {
