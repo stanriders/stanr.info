@@ -76,6 +76,17 @@ module.exports = [
     ]
   },
   { 
+    type: "Contributing",
+    projects: [
+      {
+        name: 'osu!',
+        link: 'https://github.com/ppy/osu',
+        description: 'I\'ve contributed to the osu! both in the gameplay/tools as well as the scoring system (performance points) and currently one of the people in the group of developers dedicated to reviewing changes to it.',
+        stack: 'C#'
+      }
+    ]
+  },
+  { 
     type: "Gamedev",
     projects: [
       {
@@ -95,17 +106,6 @@ module.exports = [
         link: 'https://github.com/stanriders/ksalpha-repair',
         description: 'Finishing leaked pre-alpha Katawa Shoujo visual novel scripts.',
         stack: 'Python, Ren\'Py'
-      }
-    ]
-  },
-  { 
-    type: "Contributing",
-    projects: [
-      {
-        name: 'osu!',
-        link: 'https://github.com/ppy/osu',
-        description: 'I\'ve contributed to the osu! both in the gameplay/tools as well as the scoring system (performance points) and currently one of the people in the group of developers dedicated to reviewing changes to it.',
-        stack: 'C#'
       }
     ]
   }

@@ -1,3 +1,4 @@
+'use client'
 import {Collapse} from 'react-collapse';
 import React, {useState, useCallback} from 'react';
 
