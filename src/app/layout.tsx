@@ -22,6 +22,9 @@ function RootLayout({children,}: {children: React.ReactNode}) {
   return (
 
     <html lang="en">
+      <head>
+        <script defer src="https://umami.stanr.info/script.js" data-website-id="8010fbe8-1caf-4718-a671-cd926d5e97ec"></script>
+      </head>
       <body>
         <div className="main">
           {children}
