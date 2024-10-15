@@ -6,7 +6,7 @@ module.exports = [
         name: 'Nitka Technologies',
         link: 'https://nitka.com/',
         description: 'I am working on a USA-based project of automatic license plate recognition. I have developed an asset management system (organizations, locations, devices, etc) from the ground up which is the backbone of the company\'s operations, multiple state car database parsers and camera read injection system.',
-        stack: '.NET 7, Microsoft SQL (EF Core), ASP.NET Core'
+        stack: '.NET 6-8, Microsoft SQL (EF Core), ASP.NET Core'
       },
       {
         name: 'Blanc Bank',
@@ -50,6 +50,12 @@ module.exports = [
         stack: 'ASP.NET Core, Docker, PostgreSQL; Next.js, MUI'
       },
       {
+        name: 'Relaxation Vault',
+        link: 'https://rx.stanr.info/',
+        description: 'Leaderboard of osu!lazer relax mod scores',
+        stack: 'ASP.NET Core, Docker, PostgreSQL; Next.js, NextUI'
+      },
+      {
         name: 'CircleForms',
         link: 'https://circleforms.net/',
         description: 'Google Forms-alike website with osu! OAuth integration',
@@ -65,7 +71,7 @@ module.exports = [
         name: 'den0bot',
         link: 'https://github.com/stanriders/den0bot',
         description: 'Modular telegram bot with a lot of different functions mainly focused on osu!',
-        stack: '.NET 5.0, SQLite'
+        stack: '.NET 8.0, SQLite'
       },
       {
         name: 'Web Performance Calculator',
